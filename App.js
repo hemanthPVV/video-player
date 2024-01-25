@@ -1,10 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { Video, ResizeMode } from 'expo-av';
+import VideoPlayer from './components/VideoPlayer';
 
 export default function App() {
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <VideoPlayer videoUri={ 'https://www.w3schools.com/html/mov_bbb.mp4' } />
       <StatusBar style="auto" />
     </View>
   );
